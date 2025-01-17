@@ -30,8 +30,10 @@ h1{
   margin: 10px;
   outline: none;
   width: 470px;
+  height: 40px;
   z-index: 1111;
   transition: 0.3s ease;
+  
 
 }
 .input-containner label {
@@ -51,19 +53,21 @@ h1{
 .input-containner input:valid{
   color: rgb(17, 196, 17);
   border: 2px solid rgb(17, 196, 17);
+  background-color: white;
 }
 .input-containner input:focus + label,
 .input-containner input:valid + label{
+  background-color: white;
   color: rgb(17, 196, 17);
   height: 30px;
   line-height: 30px;
-  transform: translate(-15px, -33px) scale(0.88);
+  transform: translate(-15px, -42px) scale(0.88);
   z-index: 1111;
 }
 
 
 #submit-team{
-  background-color: #FF5722;
+  background: #FF5722;
   border: none;
   max-width: 200px;
   padding: 7px;
