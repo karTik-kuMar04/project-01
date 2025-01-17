@@ -1,0 +1,75 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+h1{
+  color: rgb(20, 33, 92);
+  font-size: 4em;
+  padding: 10px;
+  margin-left: 50px;
+}
+#for-adding-team{
+  display: grid;
+  width: 510px;
+  height: inherit;
+  margin-left: 20px;
+  margin-top: 60px;
+  padding-top: 10px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+.input-containner{
+  position: relative;
+
+}
+#for-adding-team input{
+  font-size: 20px;
+  font-family: monospace;
+  font-weight: light;
+  padding: 5px;
+  margin: 10px;
+  outline: none;
+  width: 470px;
+  z-index: 1111;
+  transition: 0.3s ease;
+
+}
+.input-containner label {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  margin-left: 25px;
+  padding-right: 5px;
+  transform: translateY(-50%);
+  font-size: 20px;
+  color: #3d3a3a;
+  pointer-events: none;
+  transition: 0.3s ease;
+  background-color: #fff;
+}
+.input-containner input:focus ,
+.input-containner input:valid{
+  color: rgb(17, 196, 17);
+  border: 2px solid rgb(17, 196, 17);
+}
+.input-containner input:focus + label,
+.input-containner input:valid + label{
+  color: rgb(17, 196, 17);
+  height: 30px;
+  line-height: 30px;
+  transform: translate(-15px, -33px) scale(0.88);
+  z-index: 1111;
+}
+
+
+#submit-team{
+  background-color: #FF5722;
+  border: none;
+  max-width: 200px;
+  padding: 7px;
+  color: white;
+  cursor: pointer;
+}
+#submit-team:hover{
+  background-color: #E64A19;
+}
