@@ -14,8 +14,8 @@
   <!-- header End here -->
 
   <!-- for adding team -->
-  <div id="for-adding-team">
-    <form id="team-detail-form">
+  <div id="for-adding-team" >
+    <form id="team-detail-form" action="index2.html">
       <div class="input-containner">
         <input type="text" id="business-name" required placeholder="">
         <label for="business-name">Business name </label>
@@ -45,21 +45,20 @@
         <input type="password" id="confirm-password" required placeholder="">
         <label for="confirm-password">Confirm password </label>
       </div>
+      <p id="error-message">Error message</p>
 
       <input type="submit" id="submit-team">
     </form>
   </div>
   <!-- adding team Ends here -->
-
-  <div id="show-team-on-web">
-    <div><img src="" id="team-logo"></div>
-    <div id="business-name-on-web"></div>
-    <div id="team-name-on-web"></div>
+  <div id="show-team-on-web-div">
+    <div id="show-team-on-web">
+      <!-- Teams will be dynamically added here -->
+    </div>
   </div>
-
   <!-- for login -->
   
 
-  <script src="script.js"></script>
+  <script src="script.js" type="module"></script>
 </body>
 </html>

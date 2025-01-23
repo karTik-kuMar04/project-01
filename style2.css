@@ -1,0 +1,159 @@
+
+/* General body styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Header styling */
+#heading-containner {
+  background-color: #0044cc;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#heading-containner span {
+  display: block;
+  font-size: 18px;
+  margin: 5px 0;
+}
+
+/* Employee container styling */
+#employe-containner {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.employe-task {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.employe-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.employe-name {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.employe-bar button {
+  padding: 5px 10px;
+  margin-left: 10px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.work {
+  background-color: #28a745;
+  color: white;
+}
+
+.show-btn {
+  background-color: #007bff;
+  color: white;
+}
+
+.work:hover, .show-btn:hover {
+  opacity: 0.9;
+}
+
+/* Task input styling */
+.for-adding-task {
+  margin-top: 10px;
+}
+
+.for-adding-task input {
+  width: calc(100% - 80px);
+  padding: 5px;
+  margin-right: 10px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+}
+
+.for-adding-task button {
+  background-color: #007bff;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.for-adding-task button:hover {
+  opacity: 0.9;
+}
+
+/* Task list styling */
+.task-show {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0 0;
+}
+
+.task-show li {
+  padding: 8px;
+  background: #f1f1f1;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task-show li button {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  padding: 5px 8px;
+  cursor: pointer;
+}
+
+.task-show li button:hover {
+  opacity: 0.8;
+}
+
+/* Add employee form styling */
+#to-add-employe-div {
+  padding: 20px;
+  text-align: center;
+}
+
+#to-add-employe input[type="text"] {
+  width: 70%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  margin-right: 10px;
+}
+
+#to-add-employe input[type="submit"] {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+#to-add-employe input[type="submit"]:hover {
+  opacity: 0.9;
+}

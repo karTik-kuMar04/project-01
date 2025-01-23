@@ -77,3 +77,37 @@ h1{
 #submit-team:hover{
   background-color: #E64A19;
 }
+#show-team-on-web-div{
+  display:grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-column-gap: 50px; 
+
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+#show-team-on-web{
+  width: 204px;
+  margin-top: 20px;
+  margin-left: 20px;
+  
+  
+  
+}
+#team-image-div{
+  display: flex;
+  justify-content: center;
+  margin-top: 3px;
+}
+#team-image{
+  
+  width: 180px;
+  height: 200px;
+  border: 2px solid black;
+}
+#business-name,
+#team-name{
+  display: flex;
+  justify-content: center;
+  font-size: 1.5em;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
