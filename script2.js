@@ -14,6 +14,7 @@ if (teamDetailsJSON) {
   alert('No team details found. Please go back and fill out the form.');
 }
 
+// Add employee functionality
 addEmploye.addEventListener('submit', (event) => {
   event.preventDefault();
   const employeContainer = document.getElementById('employe-containner');
@@ -39,10 +40,14 @@ addEmploye.addEventListener('submit', (event) => {
   }
 });
 
+// Delegated event listener for employee container
 document.getElementById('employe-containner').addEventListener('click', (event) => {
   const target = event.target;
   const employeTask = target.closest('.employe-task');
 
+  if (!employeTask) return; // Exit if no employee task container was clicked
+
+  // Handle "Assign Task" button click
   if (target.classList.contains('work')) {
     console.log('Assign task button clicked');
 
@@ -51,21 +56,23 @@ document.getElementById('employe-containner').addEventListener('click', (event) 
       <input type="text" placeholder="Enter a task" class="input-for-adding-task">
       <button class="btn-for-adding-task">Add</button>
     `;
-
-    const addTaskButton = taskInputContainer.querySelector('.btn-for-adding-task');
-    addTaskButton.addEventListener('click', () => {
-      const taskInput = taskInputContainer.querySelector('.input-for-adding-task').value.trim();
-      const taskList = employeTask.querySelector('.task-show');
-
-      if (taskInput !== '') {
-        taskList.innerHTML += `<li>${taskInput}</li>`;
-        taskInputContainer.innerHTML = ''; // Clear the input section
-      } else {
-        alert('Enter a task');
-      }
-    });
   }
 
+  // Handle "Add Task" button click
+  if (target.classList.contains('btn-for-adding-task')) {
+    const taskInputContainer = employeTask.querySelector('.for-adding-task');
+    const taskInput = taskInputContainer.querySelector('.input-for-adding-task').value.trim();
+    const taskList = employeTask.querySelector('.task-show');
+
+    if (taskInput !== '') {
+      taskList.innerHTML += `<li>${taskInput}</li>`;
+      taskInputContainer.innerHTML = ''; // Clear the input section
+    } else {
+      alert('Enter a task');
+    }
+  }
+
+  // Handle "Show/Hide Tasks" button click
   if (target.classList.contains('show-btn')) {
     console.log('Show tasks button clicked');
 
@@ -80,4 +87,3 @@ document.getElementById('employe-containner').addEventListener('click', (event) 
     }
   }
 });
-
